@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Lobster', cursive;
+    background-color: whitesmoke;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .dark {
+    background-color: #292C35;
+    color: white;
+    transition: all 1s ease-in;
+  }
+
+  #checkbox {
+    position: absolute;
+    opacity: 0;
+  }
+
+  label {
+    cursor: pointer;
+    position: relative;
+    width: 55px;
+    height: 25px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .toggle {
+    transform: translateX(25px);
+  }
+
+  label .ball {
+    position: absolute;
+    left: 5px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    transition: transform 0.2s ease-in;
+  }
+
+  .fa-sun {
+    margin: 0rem 0.5rem;
+    color: #f1c40f;
+  }
+
+  .fa-moon {
+    margin-left: 5px;
+  }
+
+  div p {
+    width: 80%;
+    margin: 2rem auto;
+    font-size: 1.5rem;
+  }
